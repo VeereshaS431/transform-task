@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: beige;
+            width: 100%;
+            height: 1150px;
+        }
+        .boxes{
+            width: 500px;
+            height: 1060px;
+            /* border: 1px solid black; */
+            background-color: rgb(153, 165, 165);
+            position: relative;
+            top: 40px;
+            left: 40px;
+        }
+
+
+
+        #trans1{
+            margin-top: 60px;
+        
+        }
+        input{
+            margin-left: 50px;
+        }
+
+        h3{
+          margin-left: 40px; 
+            /* border: 2px solid black;   */
+            width: 300px; 
+            margin-top: -25px;
+            margin-left: 80px;
+            background-color: rgb(105, 123, 123);
+            border-radius: 5px;
+            padding: 5px;
+        }
+
+       
+        img{
+            margin-left: 250px;
+            position: relative;
+            top: -700px;
+            left: 520px;
+        }
+
+        #trans1:checked~ .photo{
+            transform: none;
+            transition: all 1s 1s ease;
+        }
+
+        #trans2:checked~ .photo{
+            transform: rotate(10deg);
+            transition: all 1s 1s ease;
+        }
+
+        #trans3:checked~ .photo{
+            transform: rotate(45deg);
+            transition: all 1s 1s ease;
+        }
+
+        #trans4:checked~ .photo{
+            transform: rotateX(45deg);
+            transition: all 1s 1s ease;
+        }
+
+        #trans5:checked~ .photo{
+            transform: rotateX(100deg);
+            transition: all 1s 1s ease;
+
+        }
+
+        #trans6:checked~ .photo{
+            transform: rotateY(45deg);
+            transition: all 1s 1s ease;
+        }
+
+        #trans7:checked~ .photo{
+            transform: rotateY(80deg);
+            transition: all 1s 1s ease;
+        }
+
+        #trans8:checked~ .photo{
+            transform: skew(20deg,20deg);
+            transition: all 1s 1s ease;
+        }
+
+        #trans9:checked~ .photo{
+            transform: skew(30deg,30deg);
+            transition: all 1s 1s ease;
+        }
+
+        #trans10:checked~ .photo{
+            transform: skewX(30deg);
+            transition: all 1s 1s ease;
+        }
+
+        #trans11:checked~ .photo{
+            transform: skewX(40deg);
+            transition: all 1s 1s ease;
+        }
+
+        #trans12:checked~ .photo{
+            transform: skewY(30deg);
+            transition: all 1s 1s ease;
+        }
+
+        #trans13:checked~ .photo{
+            transform: skewY(40deg);
+            transition: all 1s 1s ease;
+        }
+
+        #trans14:checked~ .photo{
+            transform: translate(20px,10px);
+            transition: all 1s 1s ease;
+        }
+
+        #trans15:checked~ .photo{
+            transform: translate(20px,20px);
+            transition: all 1s 1s ease;
+        }
+
+        #trans16:checked~ .photo{
+            transform: scale(2,2);
+            transition: all 1s 1s ease;
+        }
+
+        #trans17:checked~ .photo{
+            transform: scale(2,3);
+            transition: all 1s 1s ease;
+
+        }
+
+        #trans18:checked~ .photo{
+            transform: matrix(0.866,0.7,-0.8,0.866,0,0);
+            transition: all 1s 1s ease;
+        }
+
+        #trans19:checked~ .photo{
+            transform: matrix(0.586,0.8,-0.8,0.586,0,0);
+            transition: all 1s 1s ease;
+        }
+
+        #trans20:checked~ .photo{
+            transform: matrix(0.586,0.8,-0.8,0.586,40,30);
+            transition: all 1s 1s ease;
+        }
+
+        .frame{
+            width: 800px;
+            height: 700px;
+            /* border: 2px solid black; */
+            margin-left: 600px;
+            margin-top: -850px;
+            background: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="boxes">
+            <input type="radio" name="transform" id="trans1">
+            <label for="trans1"><h3>transform: none;</h3></label>
+
+            <input type="radio" name="transform" id="trans2">
+            <label for="trans2"><h3>transform: rotate(10deg);</h3></label>
+
+            <input type="radio" name="transform" id="trans3">
+            <label for="trans3"><h3>transform: rotate(45deg);</h3></label>
+
+            <input type="radio" name="transform" id="trans4">
+            <label for="trans4"><h3>transform: rotateX(45deg);</h3></label>
+
+            <input type="radio" name="transform" id="trans5">
+            <label for="trans5"><h3>transform: rotateX(100deg);</h3></label>
+
+            <input type="radio" name="transform" id="trans6">
+            <label for="trans6"><h3>transform: rotateY(45deg);</h3></label>
+
+            <input type="radio" name="transform" id="trans7">
+            <label for="trans7"><h3>transform: rotateY(80deg);</h3></label>
+
+            <input type="radio" name="transform" id="trans8">
+            <label for="trans8"><h3>transform: skew(20deg,20deg);</h3></label>
+
+            <input type="radio" name="transform" id="trans9">
+            <label for="trans9"><h3>transform: skew(30deg,30deg);</h3></label>
+
+            <input type="radio" name="transform" id="trans10">
+            <label for="trans10"><h3>transform: skewX(30deg);</h3></label>
+
+            <input type="radio" name="transform" id="trans11">
+            <label for="trans11"><h3>transform: skewX(40deg);</h3></label>
+
+            <input type="radio" name="transform" id="trans12">
+            <label for="trans12"><h3>transform: skewY(30deg);</h3></label>
+
+            <input type="radio" name="transform" id="trans13">
+            <label for="trans13"><h3>transform: skewY(40deg);</h3></label>
+            
+            <input type="radio" name="transform" id="trans14">
+            <label for="trans14"><h3>transform: translate(20px,10px);</h3></label>
+
+            <input type="radio" name="transform" id="trans15">
+            <label for="trans15"><h3>transform: translate(20px,20px);</h3></label>
+
+            <input type="radio" name="transform" id="trans16">
+            <label for="trans16"><h3>transform: scale(2,2);</h3></label>
+
+            <input type="radio" name="transform" id="trans17">
+            <label for="trans17"><h3>transform: scale(2,3);</h3></label>
+
+            <input type="radio" name="transform" id="trans18">
+            <label for="trans18"><h3>transform: matrix(0.866,0.7,-0.8,0.866,0,0);</h3></label>
+
+            <input type="radio" name="transform" id="trans19">
+            <label for="trans19"><h3>transform: matrix(0.586,0.8,-0.8,0.586,0,0);</h3></label>
+
+            <input type="radio" name="transform" id="trans20">
+            <label for="trans20"><h3>transform: matrix(0.586,0.8,-0.8,0.586,40,30);</h3></label>
+                
+            
+            <img class="photo" src="https://i.pinimg.com/originals/52/c6/65/52c665df0515dd447eb92544374cf543.jpg" height="350" width="350" alt="">
+
+        </div>
+        <div class="frame">
+
+        </div>
+
+    </div>
+</body>
+</html>
